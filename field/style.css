@@ -1,0 +1,150 @@
+/*
+GENERAL
+*/
+
+body{
+    overflow-y:hidden;
+}
+#wrap{
+    margin:auto;
+    width:90%;
+}
+p {
+    margin-bottom: 1px;
+}
+
+.case {
+    height: 60px;
+    width: 60px;
+    border: 1px dotted grey;
+}
+
+td{
+    min-width:60px;
+}
+/*
+CHARACTERS
+*/
+#hero, #ennemy, #side, #bad {
+    position: relative;
+}
+
+#hero-content, #ennemy-content{
+     background: url(bibi.png) no-repeat 38px 60px;
+     height: 60px;
+     width: 38px;
+     position: absolute;
+     z-index: 100;
+ }
+#side-content {
+    background: url(bibi2.png) no-repeat 38px 60px;
+    height: 60px;
+    width: 38px;
+    position: absolute;
+    z-index: 100;
+}
+
+#bad-content {
+    background: url(bibi3.png) no-repeat 38px 60px;
+    height: 60px;
+    width: 38px;
+    position: absolute;
+    z-index: 100;
+}
+
+/*
+HUD
+*/
+#turn{
+    font-weight: bold;
+    background:black;
+    color:white;
+    padding:5px;
+}
+#hud, #hud2, #commands, #infos,  #subinfos {
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(255, 229, 85, 0.2);
+    margin-top: 4px;
+    border: 1px dotted grey;
+
+    display: inline-block;
+}
+#hud, #hud2{
+    min-width:300px;
+    max-width:300px;
+}
+#hud p, #hud2 p{
+   font-weight: bold;
+}
+.stats{
+    display: inline-block;
+    padding-right:20px;
+}
+#hud h2, #hud2 h2{
+    margin:0;
+}
+#atk{
+    font-weight:bold;
+}
+
+table, #info, #subinfos, #menu {
+    cursor: pointer;
+}
+#menu{
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table, #menu{
+    margin-left:auto;
+    margin-right:auto;
+}
+#movement, #attack, #pass, #normal, #skill {
+    cursor: pointer;
+    background: rgba(255, 229, 85, 1);
+    text-align: center;
+}
+
+#setups {
+    cursor: pointer;
+    clear: both;
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 229, 85, 0.54);
+    border: 1px dotted grey;
+}
+#pointer {
+    position: relative;
+}
+
+#pointer-content {
+    position: absolute;
+    z-index: 101;
+    height: 25px;
+    width: 20px;
+    bottom: 0;
+    background: url(pointer.png) no-repeat;
+}
+
+/*
+MENUS
+*/
+.engage {
+    background: red !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.sub {
+    background: #5dd8ff !important;
+    font-weight: bold !important;
+    color: white !important;
+}
+
+.skill {
+    background: #1EFF6E !important;
+    font-weight: bold !important;
+    color: white !important;
+
+}
